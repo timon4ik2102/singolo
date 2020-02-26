@@ -1,0 +1,89 @@
+/* .icon {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-size: cover;
+}
+
+.icon-arrow {
+	background-image: url(/singolo/assets/img/pensil-icon.svg);
+}
+.icon-arrow:hover,
+.icon-arrow:focus {
+	filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  } */
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: url('./assets/fonts/Lato/lato-v16-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./assets/fonts/Lato/lato-v16-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./assets/fonts/Lato/lato-v16-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: url('./assets/fonts/Lato/lato-v16-latin-900.woff2') format('woff2');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 1020px;
+	background-color: wheat;
+}
+
+.portfolio {
+	height: 870px;
+	background-color: #2d303a;
+	border-bottom: solid 6px #323746;
+}
+.portfolio-title {
+	padding-top: 69px;
+	margin-left: 41px;
+}
+
+.portfolio-title-header {
+	font-size: 30px;
+	line-height: 18px;
+	color: #666d89;
+	font-family: 'Lato';
+	font-weight: 900;
+	text-align: left;
+}
+
+.portfolio-title-text {
+	width: 940px;
+	height: 57px;
+	font-size: 18px;
+	line-height: 30px;
+	color: #767e9e;
+	font-family: 'Lato';
+	font-weight: 300;
+	text-align: left;
+}
