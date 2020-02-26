@@ -55,7 +55,6 @@
 .content {
 	margin: 0 auto;
 	max-width: 1020px;
-	background-color: wheat;
 }
 
 .portfolio {
@@ -72,18 +71,59 @@
 	font-size: 30px;
 	line-height: 18px;
 	color: #666d89;
-	font-family: 'Lato';
 	font-weight: 900;
 	text-align: left;
+	letter-spacing: -0.11px;
 }
 
 .portfolio-title-text {
+	margin-top: 27px;
 	width: 940px;
-	height: 57px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #767e9e;
-	font-family: 'Lato';
 	font-weight: 300;
+
 	text-align: left;
+}
+
+.portfolio-buttons {
+	display: flex;
+	margin-top: 11px;
+	padding-left: 42px;
+}
+
+.portfolio-btn {
+	padding: 0 6.1px;
+	margin-right: 10px;
+	list-style-type: none;
+	border-radius: 5px;
+	border: 1px solid #666d89;
+	font-size: 12px;
+	line-height: 20px;
+	color: #767e9e;
+	font-weight: 400;
+	letter-spacing: 0.06px;
+	cursor: pointer;
+}
+
+.portfolio-btn:nth-child(3),
+.portfolio-btn:nth-child(4) {
+	padding: 0 5px;
+}
+
+.portfolio-btn-active,
+.portfolio-btn:hover {
+	color: #c5c5c5;
+	border: 1px solid #c5c5c5;
+}
+
+.portfolio-images {
+	margin-top: 19px;
+	margin-left: 41px;
+}
+
+.portfolio-img {
+	margin-bottom: 17px;
+	margin-right: 17px;
 }
