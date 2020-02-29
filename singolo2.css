@@ -196,12 +196,12 @@
 	letter-spacing: -0.06px;
 }
 
-.persons-social-icons {
+.social-icons {
 	margin-left: 1px;
 	display: flex;
 }
 
-.persons-social-icon {
+.social-icon {
 	margin-top: 23px;
 	margin-right: 7px;
 	width: 33px;
@@ -216,15 +216,15 @@
 }
 
 .icon-facebook {
-	background: url(./assets/icons/facebook.png) no-repeat center;
+	background: url(./assets/icons/ico-facebook.svg) no-repeat center;
 }
 
 .icon-google {
-	background: url(./assets/icons/google+.png) no-repeat center;
+	background: url(./assets/icons/ico-google+.svg) no-repeat center;
 }
 
 .icon-twitter {
-	background: url(./assets/icons/twitter.png) no-repeat center;
+	background: url(./assets/icons/ico-twitter.svg) no-repeat center;
 }
 
 .icon-linkedin {
@@ -238,18 +238,3 @@
 	background-color: rgb(168, 166, 173);
 	filter: invert(100%) brightness(154%) saturate(4%);
 }
-
-/* .icon {
-	display: inline-block;
-	width: 70px;
-	height: 70px;
-	background-size: cover;
-}
-
-.icon-arrow {
-	background-image: url(/singolo/assets/img/pensil-icon.svg);
-}
-.icon-arrow:hover,
-.icon-arrow:focus {
-	filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-  } */
