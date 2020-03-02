@@ -106,6 +106,10 @@
 .portfolio-images {
 	margin-top: 19px;
 	margin-left: 41px;
+	width: 970px;
+	height: 615px;
+	overflow: hidden;
+	background-color: chartreuse;
 }
 
 .portfolio-img {
