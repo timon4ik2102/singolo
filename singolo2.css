@@ -109,7 +109,6 @@
 	width: 970px;
 	height: 615px;
 	overflow: hidden;
-	background-color: chartreuse;
 }
 
 .portfolio-img {
@@ -232,7 +231,7 @@
 }
 
 .icon-linkedin {
-	background: url(./assets/icons/linkedin.png) no-repeat center;
+	background: url(./assets/icons/ico-linkedin.svg) no-repeat center;
 }
 
 .icon-facebook:hover,
