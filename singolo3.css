@@ -89,7 +89,7 @@
 	background-color: #d6564f;
 	font-size: 12px;
 	line-height: 22px;
-	color: #f48c8f;
+	color: white;
 	font-weight: 400;
 	text-align: left;
 	border: none;
@@ -115,11 +115,11 @@
 }
 
 .input-description::placeholder {
-	font-family: 'Lato', sans-serif;
+	/* font-family: 'Lato', sans-serif;
 	font-size: 12px;
 	line-height: 22px;
 	color: #f48c8f;
-	font-weight: 400;
+	font-weight: 400; */
 	text-align: left;
 	letter-spacing: 0.03px;
 }
@@ -181,7 +181,7 @@
 
 .details-img {
 	display: block;
-	margin-top: 5px;
+	margin-top: 4px;
 	margin-left: 1px;
 	width: 13px;
 	height: 12px;
@@ -197,6 +197,7 @@
 
 .img-mail {
 	background: url(./assets/icons/ico-mail.svg) no-repeat center;
+	margin-top: 6px;
 }
 
 .details-href {
