@@ -177,7 +177,6 @@
 
 .services-title-header {
 	padding-top: 59px;
-
 	font-size: 30px;
 	font-weight: 900;
 	color: #666d89;
@@ -189,7 +188,7 @@
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 30px;
-	text-align: left;
+	text-align: justify;
 	letter-spacing: 0.15px;
 }
 
@@ -207,6 +206,7 @@
 .services-item {
 	display: flex;
 	max-width: 32%;
+
 	align-items: flex-start;
 	color: #666d89;
 }
@@ -257,15 +257,14 @@
 	letter-spacing: -0.6px;
 }
 
-/* .title-spacing-one {
-	letter-spacing: -0.7px;
-} */
 .title-spacing-two {
 	padding-left: 1px;
 	letter-spacing: -0.55px;
 }
 
 .services-item-text {
+	width: 220px;
+	height: 73px;
 	font-size: 12px;
 	line-height: 21.5px;
 	color: #767e9e;
@@ -330,13 +329,19 @@
 	padding: 0 5px;
 }
 
-.portfolio-btn-active,
-.portfolio-btn:hover {
+.portfolio-btn-active {
 	color: #dedede;
 	border: 1px solid #c5c5c5;
 }
 
+.portfolio-btn:hover {
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
 .portfolio-images {
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 19px;
 	margin-left: 40px;
 	width: 970px;
@@ -345,8 +350,8 @@
 }
 
 .portfolio-img {
-	margin-bottom: 17px;
-	margin-right: 17px;
+	margin-bottom: 20px;
+	margin-right: 20px;
 }
 
 .about {
@@ -387,9 +392,7 @@
 	justify-content: space-between;
 	margin: 45px 40px 0;
 }
-/* .persons-item:nth-child(3) {
-	margin-right: -2px;
-} */
+
 .persons-item:nth-child(2) {
 	margin-right: 2px;
 }
@@ -406,15 +409,23 @@
 .persons-content-title {
 	margin-top: 14px;
 	margin-left: -1px;
+	width: 300px;
+	height: 18px;
 	font-size: 18px;
 	line-height: 18px;
 	color: #666d89;
 	font-weight: 900;
 	text-align: left;
 	letter-spacing: -0.1px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .desmond-title {
+	padding-left: 1px;
+}
+.desmond-text {
 	padding-left: 1px;
 }
 
@@ -438,6 +449,10 @@
 	margin-left: 1px;
 }
 
+.scolara-icons {
+	margin-left: 0;
+}
+
 .social-icon {
 	margin-top: 23px;
 	margin-right: 8px;
@@ -447,10 +462,6 @@
 	border: 1px solid #666d89;
 	cursor: pointer;
 }
-/* 
-.scolara-icons {
-	margin-left: -0.5px;
-} */
 
 .icon-facebook {
 	background: url(./assets/icons/ico-facebook.svg) no-repeat center;
@@ -538,11 +549,12 @@
 .input-name,
 .input-email,
 .input-subject {
+	padding: 8px 15px 9px;
 	height: 38px;
 }
 
 .input-description {
-	padding-top: 7px;
+	padding: 7px 15px 9px;
 	height: 202px;
 }
 
