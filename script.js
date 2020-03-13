@@ -68,13 +68,10 @@ const portfolioButtons = document.querySelector('.portfolio-buttons')
 console.log(portfolioButtons)
 let arrImg = Array.from(imagesItems.querySelectorAll('.portfolio-img'))
 
-
-
 portfolioButtons.addEventListener('click',(event) => {
     portfolioButtons.querySelectorAll('.portfolio-btn').forEach((el,i) =>
         el.classList.remove('portfolio-btn-active'))
     event.target.classList.add('portfolio-btn-active')
-
 
 
     // const mixRand = () => ;
@@ -84,11 +81,6 @@ portfolioButtons.addEventListener('click',(event) => {
 
 
 })
-
-
-
-
-
 
 
 
