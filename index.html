@@ -11,15 +11,15 @@
 <body>
   <div class="wrapper">
     <header class="header" id="header">
-      <div class="content-header content">
+      <div class="content-header content-header-big content">
         <div class="logo">
           <a class="logo-link" href="#header">
             <h1 class="logo-title"><span class="logo-text">singolo</span><span class="logo-star">*</span></h1>
           </a>
         </div>
         <nav class="header-nav">
-          <ul class="nav-items">
-            <li class="nav-item"> <a class="nav-text nav-text-active" href="#header">Home</a>
+          <ul class="nav-items" id='menu'>
+            <li class="nav-item"> <a class="nav-text nav-text-active" href="#slider">Home</a>
             </li>
             <li class="nav-item"><a class="nav-text" href="#services">Services</a>
             </li>
@@ -34,15 +34,26 @@
       </div>
     </header>
     <main class="main">
-      <section class="slider" id="slider">
+      <section class="slider content" id="slider">
         <div class="content-slider content">
           <div class="slider-arrows">
             <img class="slider-arrow arrow-prev" src="./assets/img/arrow-left.svg" alt="prev">
             <img class="slider-arrow arrow-next" src="./assets/img/arrow-right.svg" alt="next">
           </div>
-          <div class="phone-images">
-            <img class="phone-vertical" src="./assets/img/phone-vert.png" alt="Vertical phone">
-            <img class="phone-horizontal" src="./assets/img/phone-hor.png" alt="Horizontal phone">
+          <div class="slide-item slide-active">
+            <div class="slides slide1 slide-active">
+              <img class="phone-img phone-vertical" src="./assets/img/phone-vert.png" alt="Vertical phone">
+              <img class="phone-img phone-horizontal" src="./assets/img/phone-hor.png" alt="Horizontal phone">
+              <img class="phone-img phone-vertical-black visibility-hidden" src="./assets/img/phone-vert-black.png"
+                alt="Vertical phone">
+              <img class="phone-img phone-horizontal-black visibility-hidden" src="./assets/img/phone-hor-black.png"
+                alt="Horizontal phone">
+            </div>
+          </div>
+          <div class="slide-item">
+            <div class="slides slide2 slide-active">
+              <img class="phone-slide2" src="./assets/img/Slide-2j.jpg" alt="Second phone">
+            </div>
           </div>
         </div>
       </section>
@@ -101,7 +112,7 @@
               </div>
             </div>
             <div class="services-item services-item6">
-              <div class="services-item-logo"><img class="services-logo-img" src="./assets/img/star-con.svg"></div>
+              <div class="services-item-logo"><img class="services-logo-img" src="./assets/img/star-icon.svg"></div>
               <div class="services-item-content">
                 <h3 class="services-item-title title-spacing-two"> Feel Like A Star </h3>
                 <p class="services-item-text"> Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce
@@ -109,7 +120,7 @@
               </div>
             </div>
           </div>
-        </div>
+          </>
       </section>
       <section class="portfolio" id="portfolio">
         <div class="content-portfolio content">
@@ -124,8 +135,8 @@
             <li class="portfolio-btn">Graphic Design</li>
             <li class="portfolio-btn">Artwork</li>
           </ul>
-          <div class="portfolio-images">
-            <img class="portfolio-img" src="./assets/img/portfol1.png" alt="portofolio-image">
+          <div class="portfolio-images" id="portfolio-images">
+            <img class="portfolio-img portfolio-img-active" src="./assets/img/portfol1.png" alt="portofolio-image">
             <img class="portfolio-img" src="./assets/img/portfol2.png" alt="portofolio-image">
             <img class="portfolio-img" src="./assets/img/portfol3.png" alt="portofolio-image">
             <img class="portfolio-img" src="./assets/img/portfol4.png" alt="portofolio-image">
@@ -209,13 +220,15 @@
               tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div>
           <div class="contact-forms">
-            <form class="contact-form" action="#">
-              <input class="contact-form-input input-name" type="text" placeholder="Name (Required)" required>
-              <input class="contact-form-input input-email" type="email" placeholder="Email (Required)" required>
-              <input class="contact-form-input input-subject" type="text" placeholder="Subject">
-              <textarea class="contact-form-input input-description" name="description" cols="30" rows="20"
-                placeholder="Describe your project in detail..."></textarea>
-              <button type="submit" class="contact-form-input btn-submit">Submit</button>
+            <form class="contact-form" id="contact-form" action="#">
+              <input class="contact-form-input input-name" id="input-name" type="text" placeholder="Name (Required)"
+                autocomlete=" off" pattern="[A-Za-z ]{1,32}" required>
+              <input class="contact-form-input input-email" id="input-email" type="email" placeholder="Email (Required)"
+                required>
+              <input class="contact-form-input input-subject" id="subject" type="text" placeholder="Subject">
+              <textarea class="contact-form-input input-description" id="description" name="description" cols="30"
+                rows="20" placeholder="Describe your project in detail..."></textarea>
+              <button type="submit" class="contact-form-input btn-submit" id="btn">Submit</button>
             </form>
             <div class="contact-info">
               <h4 class="contact-info-title">Contact Information</h4>
@@ -255,6 +268,25 @@
       </div>
     </footer>
   </div>
+  <div id="message-block" class='hidden message-block'>
+    <div class="message" id="message">
+      <p>Письмо отправлено</p>
+      <p>Тема: <span class="message-text" id="message-result">svesvs</span></p>
+      <hr>
+      <p>Описание: <span class="message-text" id="descr-result">Quisque hendrerit purus dapibus, ornare nibh vitae,
+          viver­ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
+          faucibus. Morbi at aliquet turpis, et consequat felis. Quisque hendrerit purus dapibus, ornare nibh vitae,
+          viver­ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
+          faucibus. Morbi at aliquet turpis, et consequat felis. Quisque hendrerit purus dapibus, ornare nibh vitae,
+          viver­ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
+          faucibus. Morbi at aliquet turpis, et consequat felis. Quisque hendrerit purus dapibus, ornare nibh vitae,
+          viver­ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
+          faucibus. Morbi at aliquet turpis, et consequat felis. </span></span>
+        <hr>
+        <button class="btn-close" id="close-btn">OK</button>
+    </div>
+  </div>
+  <script src='script.js'></script>
 </body>
 
 </html>
