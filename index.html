@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper">
     <header class="header" id="header">
-      <div class="content-header content">
+      <div class="content-header content-header-big content">
         <div class="logo">
           <a class="logo-link" href="#header">
             <h1 class="logo-title"><span class="logo-text">singolo</span><span class="logo-star">*</span></h1>
@@ -19,7 +19,7 @@
         </div>
         <nav class="header-nav">
           <ul class="nav-items" id='menu'>
-            <li class="nav-item"> <a class="nav-text nav-text-active" href="#header">Home</a>
+            <li class="nav-item"> <a class="nav-text nav-text-active" href="#slider">Home</a>
             </li>
             <li class="nav-item"><a class="nav-text" href="#services">Services</a>
             </li>
@@ -40,16 +40,18 @@
             <img class="slider-arrow arrow-prev" src="./assets/img/arrow-left.svg" alt="prev">
             <img class="slider-arrow arrow-next" src="./assets/img/arrow-right.svg" alt="next">
           </div>
-          <div class="phone-images">
-            <div class="slides slide1">
-              <img class="phone-vertical" src="./assets/img/phone-vert.png" alt="Vertical phone">
-              <img class="phone-horizontal" src="./assets/img/phone-hor.png" alt="Horizontal phone">
-              <img class=" phone-vertical-black visibility-hidden" src="./assets/img/phone-vert-black.png"
+          <div class="slide-item slide-active">
+            <div class="slides slide1 slide-active">
+              <img class="phone-img phone-vertical" src="./assets/img/phone-vert.png" alt="Vertical phone">
+              <img class="phone-img phone-horizontal" src="./assets/img/phone-hor.png" alt="Horizontal phone">
+              <img class="phone-img phone-vertical-black visibility-hidden" src="./assets/img/phone-vert-black.png"
                 alt="Vertical phone">
-              <img class="phone-horizontal-black visibility-hidden" src="./assets/img/phone-hor-black.png"
+              <img class="phone-img phone-horizontal-black visibility-hidden" src="./assets/img/phone-hor-black.png"
                 alt="Horizontal phone">
             </div>
-            <div class="slides slide2">
+          </div>
+          <div class="slide-item">
+            <div class="slides slide2 slide-active">
               <img class="phone-slide2" src="./assets/img/Slide-2j.jpg" alt="Second phone">
             </div>
           </div>
@@ -118,7 +120,7 @@
               </div>
             </div>
           </div>
-        </div>
+          </>
       </section>
       <section class="portfolio" id="portfolio">
         <div class="content-portfolio content">
