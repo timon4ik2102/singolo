@@ -2,32 +2,51 @@
 
 
 document.addEventListener('scroll',onScrool)
-let contentHeader = document.querySelector('.content-header ');
+const contentHeader = document.querySelector('.content-header ');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-text');
+const MENU_BUTTON = document.querySelectorAll('.hamburger');
+const OVERLAY = document.querySelector('.black-overlay');
+const MOBILE_MENU = document.querySelector('.content-header-mobile')
 
 
 function onScrool(event) {
     const curPos = window.scrollY;
-    const navLinks = document.querySelectorAll('.nav-text');
-    const sections = document.querySelectorAll('section');
-    if (curPos <= 300) {
-        contentHeader.classList.remove('content-header-small')
-        contentHeader.classList.add('content-header-big')
-    } else {
-        contentHeader.classList.remove('content-header-big')
-        contentHeader.classList.add('content-header-small')
 
-    }
     sections.forEach((el) => {
         if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
             navLinks.forEach((a) => {
                 a.classList.remove('nav-text-active');
                 if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
                     a.classList.add('nav-text-active')
+                    MOBILE_MENU.classList.remove('mobile-menu-active');
+                    OVERLAY.classList.remove('overlay-active')
+
                 }
             })
-
         }
     })
+
+}
+
+
+
+
+
+
+MENU_BUTTON.forEach(el => el.addEventListener('click',(e) => {
+    e.preventDefault();
+    showNavBar()
+}))
+
+OVERLAY.addEventListener('click',(e) => {
+    e.preventDefault();
+    showNavBar()
+})
+
+function showNavBar() {
+    OVERLAY.classList.toggle('overlay-active')
+    MOBILE_MENU.classList.toggle('mobile-menu-active');
 
 }
 
@@ -69,30 +88,36 @@ CLOSE_BUTTON.addEventListener('click',() => {
 
 
 //image active
+let switchedOn = true;
 let imagesItems = document.querySelector('#portfolio-images')
 
 imagesItems.addEventListener('click',(event) => {
+    if (event.target.tagName !== 'IMG') return false;
+    if (event.target.classList.contains("portfolio-img-active")) {
+        switchedOn = false;
+    }
     imagesItems.querySelectorAll('.portfolio-img').forEach(el => el.classList.remove('portfolio-img-active'))
-    event.target.classList.add('portfolio-img-active');
+    if (switchedOn) {
+        event.target.classList.add('portfolio-img-active');
+    }
+    switchedOn = true
 })
+
 
 //image random
 const portfolioButtons = document.querySelector('.portfolio-buttons')
-console.log(portfolioButtons)
 let arrImg = Array.from(imagesItems.querySelectorAll('.portfolio-img'))
-
 portfolioButtons.addEventListener('click',(event) => {
-    portfolioButtons.querySelectorAll('.portfolio-btn').forEach((el,i) =>
-        el.classList.remove('portfolio-btn-active'))
-    event.target.classList.add('portfolio-btn-active')
+    console.log(event)
 
+    if (event.target.classList.contains('portfolio-btn')) {
+        portfolioButtons.querySelectorAll('.portfolio-btn').forEach((el,i) =>
+            el.classList.remove('portfolio-btn-active'))
+        event.target.classList.add('portfolio-btn-active')
 
-    // const mixRand = () => ;
-    console.log(arrImg)
-    let tempImgArrMix = arrImg.map(el => el.src).sort(() => 0.5 - Math.random())
-    arrImg.map((el,i) => el.src = tempImgArrMix[i])
-
-
+        let tempImgArrMix = arrImg.map(el => el.src).sort(() => 0.5 - Math.random())
+        arrImg.map((el,i) => el.src = tempImgArrMix[i])
+    }
 })
 
 

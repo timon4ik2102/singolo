@@ -1,0 +1,240 @@
+@media (min-width: 300px) and (max-width: 374px) {
+	.content {
+		padding: 0 30px;
+	}
+	.hamburger {
+		display: inline-block;
+	}
+
+	.content-header {
+		justify-content: flex-start;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-bottom: 0;
+	}
+
+	.logo {
+		margin-left: 70px;
+	}
+
+	.logo-title {
+		font-size: 19.6875px;
+		line-height: 24px;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.content-slider {
+		padding: 0 0px;
+	}
+
+	.slider-arrow {
+		height: 28px;
+	}
+	.slider-arrow:hover {
+		transform: scale(1);
+	}
+
+	.content-services {
+		padding: 0 32px;
+		border-bottom: 0;
+	}
+
+	.services-title-header {
+		padding-top: 25px;
+	}
+
+	.services-title-text {
+		text-align: left;
+	}
+
+	.services-items {
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+
+	.services-item {
+		flex-basis: 100%;
+	}
+	/* .services-item-text {
+		width: calc(77% - 40px);
+	} */
+
+	.content-portfolio {
+		padding: 0 25px 42px;
+
+		border-bottom: 0;
+	}
+
+	.portfolio-title {
+		padding-top: 52px;
+		padding-left: 5px;
+	}
+
+	.portfolio-title-text {
+		width: 96%;
+		text-align: left;
+	}
+	.portfolio-images-list {
+		margin-top: 20px;
+	}
+
+	.portfolio-buttons {
+		margin-top: 23px;
+		padding-left: 5px;
+	}
+
+	.portfolio-btn {
+		font-size: 10px;
+		line-height: 19px;
+	}
+
+	.portfolio-images-item {
+		list-style: none;
+		margin: 5px;
+		flex: 1 0 40%;
+	}
+
+	.portfolio-images-item:nth-child(1n + 9) {
+		display: none;
+	}
+
+	.content-about {
+		border-bottom: 0;
+	}
+
+	.about-title {
+		padding-top: 35px;
+	}
+
+	.about-title-text {
+		margin-top: 20px;
+		text-align: left;
+		width: 98%;
+	}
+
+	.about-persons {
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 30px 0 10px 1px;
+	}
+
+	.persons-item {
+		padding-bottom: 34px;
+	}
+
+	.content-contacts {
+		border-bottom: 0;
+	}
+
+	.contacts-title-header {
+		padding-top: 50px;
+	}
+
+	.contacts-title-text {
+		width: 99%;
+		text-align: left;
+	}
+
+	.contact-forms {
+		margin-top: 31px;
+		flex-direction: column;
+	}
+	.contact-form {
+		width: 100%;
+	}
+
+	.contact-form-input {
+		margin-bottom: 12px;
+	}
+
+	.input-description {
+		margin-bottom: 14px;
+	}
+
+	.btn-submit {
+		width: 100%;
+		height: 50px;
+		margin-bottom: 0;
+	}
+
+	.contact-info {
+		margin-left: 0;
+		width: 100%;
+		margin-top: 32px;
+	}
+
+	.contacts-details {
+		margin-top: 15px;
+		padding-bottom: 42px;
+	}
+
+	.footer-copyright {
+		display: none;
+	}
+	.content-footer {
+		padding: 31px 30px 31px;
+		justify-content: center;
+	}
+
+	.content-header-mobile {
+		position: fixed;
+		top: 0;
+		z-index: 100;
+		display: flex;
+		flex-direction: column;
+		background-color: #2d303a;
+		width: 74%;
+		height: 100%;
+		left: -74%;
+		transition: all 0.4s;
+	}
+
+	.mobile-menu-active {
+		left: 0;
+	}
+
+	.hamburger-logo {
+		display: flex;
+		padding: 23px 0 0 22px;
+	}
+
+	.hamburger-vert {
+		transform: rotate(90deg);
+	}
+
+	.nav-items {
+		display: none;
+	}
+
+	.logo-mobile {
+		margin-left: 30px;
+	}
+
+	.nav-items-mobile {
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-item:not(:first-child):before {
+		display: none;
+	}
+
+	.header-nav-mobile {
+		margin-left: 25%;
+		margin-top: 184px;
+	}
+
+	.nav-text {
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: -0.035em;
+	}
+
+	.nav-item-mobile {
+		margin-bottom: 27px;
+	}
+}

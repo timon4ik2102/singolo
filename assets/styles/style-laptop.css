@@ -1,0 +1,61 @@
+@media (min-width: 768px) and (max-width: 1019px) {
+	.services-title-header {
+		padding-top: 39px;
+	}
+
+	.services-items {
+		padding-right: 34px;
+		padding-top: 45px;
+	}
+
+	.services-item {
+		flex-basis: 47%;
+		margin-bottom: 39px;
+	}
+
+	.portfolio-title-text {
+		width: 90%;
+	}
+
+	.portfolio-buttons {
+		margin-top: 25px;
+	}
+	/* .portfolio-images {
+		padding: 28px 0 73px;
+    } */
+
+	.portfolio-images-list {
+		margin-top: 18px;
+	}
+
+	.portfolio-images-item {
+		list-style: none;
+		margin: 10px;
+		flex: 1 0 25%;
+	}
+
+	.about-title {
+		padding-top: 62px;
+	}
+
+	.about-persons {
+		justify-content: space-between;
+		padding: 46px 0 75px;
+	}
+
+	.persons-content {
+		margin: 12px 0 1px;
+	}
+
+	.persons-social-items {
+		margin-top: 17px;
+	}
+
+	.contact-info {
+		margin-left: 29px;
+	}
+
+	.contacts-details {
+		margin-top: 16px;
+	}
+}

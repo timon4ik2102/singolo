@@ -12,6 +12,11 @@
   <div class="wrapper">
     <header class="header" id="header">
       <div class="content-header content-header-big content">
+        <span class="hamburger">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
         <div class="logo">
           <a class="logo-link" href="#header">
             <h1 class="logo-title"><span class="logo-text">singolo</span><span class="logo-star">*</span></h1>
@@ -32,9 +37,38 @@
           </ul>
         </nav>
       </div>
+      <!-- MOBILE MENU -->
+      <nav class="content-header-mobile">
+        <div class="hamburger-logo">
+          <span class="hamburger hamburger-vert">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+          <div class="logo logo-mobile">
+            <a class="logo-link" href="#header">
+              <h1 class="logo-title"><span class="logo-text">singolo</span><span class="logo-star">*</span></h1>
+            </a>
+          </div>
+        </div>
+        <nav class="header-nav-mobile">
+          <ul class="nav-items nav-items-mobile" id='menu'>
+            <li class="nav-item nav-item-mobile"> <a class="nav-text nav-text-active" href="#slider">Home</a>
+            </li>
+            <li class="nav-item nav-item-mobile"><a class="nav-text" href="#services">Services</a>
+            </li>
+            <li class="nav-item nav-item-mobile"><a class="nav-text" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item nav-item-mobile"><a class="nav-text" href="#about">About</a>
+            </li>
+            <li class="nav-item nav-item-mobile"><a class="nav-text" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- END MOBILE -->
     </header>
     <main class="main">
-      <section class="slider content" id="slider">
+      <section class="slider " id="slider">
         <div class="content-slider content">
           <div class="slider-arrows">
             <img class="slider-arrow arrow-prev" src="./assets/img/arrow-left.svg" alt="prev">
@@ -42,6 +76,7 @@
           </div>
           <div class="slide-item slide-active">
             <div class="slides slide1 slide-active">
+              <img class="phone-slide1" src="./assets/img/slider-bg.png" alt="Second phone">
               <img class="phone-img phone-vertical" src="./assets/img/phone-vert.png" alt="Vertical phone">
               <img class="phone-img phone-horizontal" src="./assets/img/phone-hor.png" alt="Horizontal phone">
               <img class="phone-img phone-vertical-black visibility-hidden" src="./assets/img/phone-vert-black.png"
@@ -52,12 +87,12 @@
           </div>
           <div class="slide-item">
             <div class="slides slide2 slide-active">
-              <img class="phone-slide2" src="./assets/img/Slide-2j.jpg" alt="Second phone">
+              <img class="phone-slide2" src="./assets/img/slide-2.png" alt="Second phone">
             </div>
           </div>
         </div>
       </section>
-      <section class="services" id="services">
+      <section class="services " id="services">
         <div class="content-services content">
           <div class="services-title">
             <div class="services-title-header"> Our Services </div>
@@ -81,8 +116,8 @@
               </div>
               <div class="services-item-content">
                 <h3 class="services-item-title"> Inovative Ideas </h3>
-                <p class="services-item-text"> Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus
-                  purus, nec rutrum tellus dolor id lorem. </p>
+                <p class="services-item-text"> Quisque luctus, quam eget molestie comodo, lacus purus cursus purus, nec
+                  rutrum tellus dolor id lorem. </p>
               </div>
             </div>
             <div class="services-item services-item3">
@@ -120,7 +155,7 @@
               </div>
             </div>
           </div>
-          </>
+          </nav>
       </section>
       <section class="portfolio" id="portfolio">
         <div class="content-portfolio content">
@@ -135,19 +170,33 @@
             <li class="portfolio-btn">Graphic Design</li>
             <li class="portfolio-btn">Artwork</li>
           </ul>
-          <div class="portfolio-images" id="portfolio-images">
-            <img class="portfolio-img portfolio-img-active" src="./assets/img/portfol1.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol2.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol3.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol4.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol5.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol6.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol7.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol8.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol9.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol10.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol11.png" alt="portofolio-image">
-            <img class="portfolio-img" src="./assets/img/portfol12.png" alt="portofolio-image">
+          <div class="portfolio-images">
+            <ul class="portfolio-images-list" id="portfolio-images">
+              <li class="portfolio-images-item"><img class="portfolio-img portfolio-img-active"
+                  src="./assets/img/portfol1.png" alt="portofolio-image"></li>
+              <li class="portfolio-images-item"> <img class="portfolio-img" src="./assets/img/portfol2.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol3.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol4.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol5.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol6.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol7.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol8.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol9.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol10.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol11.png"
+                  alt="portofolio-image"></li>
+              <li class="portfolio-images-item"><img class="portfolio-img" src="./assets/img/portfol12.png"
+                  alt="portofolio-image"></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -256,7 +305,7 @@
     </main>
     <footer class="footer">
       <div class="content-footer content">
-        <p class="footer-copyright"> &copy; Copyright 2013 &#183; by PSDchat.com</p>
+        <p class="footer-copyright"> &copy; Copyright 2020 </p>
         <div class="footer-social-items">
           <ul class="social-icons">
             <li class="social-icon icon-facebook"><a href="#"></a></li>
@@ -267,24 +316,17 @@
         </div>
       </div>
     </footer>
-  </div>
-  <div id="message-block" class='hidden message-block'>
-    <div class="message" id="message">
-      <p>Письмо отправлено</p>
-      <p>Тема: <span class="message-text" id="message-result">svesvs</span></p>
-      <hr>
-      <p>Описание: <span class="message-text" id="descr-result">Quisque hendrerit purus dapibus, ornare nibh vitae,
-          viver­ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
-          faucibus. Morbi at aliquet turpis, et consequat felis. Quisque hendrerit purus dapibus, ornare nibh vitae,
-          viver­ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
-          faucibus. Morbi at aliquet turpis, et consequat felis. Quisque hendrerit purus dapibus, ornare nibh vitae,
-          viver­ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
-          faucibus. Morbi at aliquet turpis, et consequat felis. Quisque hendrerit purus dapibus, ornare nibh vitae,
-          viver­ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
-          faucibus. Morbi at aliquet turpis, et consequat felis. </span></span>
+    <div id="message-block" class='hidden message-block'>
+      <div class="message" id="message">
+        <p>Письмо отправлено</p>
+        <p>Тема: <span class="message-text" id="message-result"></span></p>
         <hr>
-        <button class="btn-close" id="close-btn">OK</button>
+        <p>Описание: <span class="message-text" id="descr-result"> </span></span>
+          <hr>
+          <button class="btn-close" id="close-btn">OK</button>
+      </div>
     </div>
+    <div class="black-overlay"></div>
   </div>
   <script src='script.js'></script>
 </body>
