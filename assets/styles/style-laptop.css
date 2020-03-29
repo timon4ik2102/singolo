@@ -1,4 +1,8 @@
 @media (min-width: 768px) and (max-width: 1019px) {
+	.content-services {
+		border-bottom: 0;
+	}
+
 	.services-title-header {
 		padding-top: 39px;
 	}
@@ -6,6 +10,7 @@
 	.services-items {
 		padding-right: 34px;
 		padding-top: 45px;
+		padding-bottom: 37px;
 	}
 
 	.services-item {
@@ -13,6 +18,9 @@
 		margin-bottom: 39px;
 	}
 
+	.content-portfolio {
+		padding: 0 30px 56px;
+	}
 	.portfolio-title-text {
 		width: 90%;
 	}
@@ -20,9 +28,6 @@
 	.portfolio-buttons {
 		margin-top: 25px;
 	}
-	/* .portfolio-images {
-		padding: 28px 0 73px;
-    } */
 
 	.portfolio-images-list {
 		margin-top: 18px;
@@ -32,6 +37,10 @@
 		list-style: none;
 		margin: 10px;
 		flex: 1 0 25%;
+	}
+
+	.content-about {
+		border: 0;
 	}
 
 	.about-title {
@@ -49,6 +58,10 @@
 
 	.persons-social-items {
 		margin-top: 17px;
+	}
+
+	.content-contacts {
+		padding-bottom: 40px;
 	}
 
 	.contact-info {
