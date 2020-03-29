@@ -822,6 +822,7 @@ html {
 .message-block,
 .message-alert-block {
 	position: fixed;
+	z-index: 20;
 	width: 100vw;
 	height: 100vh;
 	top: 0;
@@ -830,14 +831,26 @@ html {
 }
 
 .message {
-	position: absolute;
+	/* position: absolute;
 	padding: 30px 30px 20px;
 	top: calc(100% - 70%);
-	left: calc(100% - 81.5%);
+	left: calc(100% - 81.5%); */
+
+	padding: 30px 30px 20px;
+	margin: auto;
+	position: absolute;
+	z-index: 100;
+	width: 50%;
+	height: 250px;
+	max-height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	font-size: 1.4em;
 	font-weight: bold;
 	color: rgb(160, 32, 32);
-	width: 44em;
+
 	border: 2px solid rgb(160, 32, 32);
 	border-radius: 10px;
 	background: radial-gradient(circle, rgba(238, 174, 202, 1) 10%, rgba(233, 148, 170, 1) 82%);
@@ -846,7 +859,7 @@ html {
 .message-text {
 	font-size: 1.2em;
 	font-weight: normal;
-	/* font-style: italic; */
+
 	color: black;
 }
 
@@ -856,11 +869,11 @@ html {
 
 .btn-close {
 	display: block;
-	margin: 15px auto 0;
-	/* text-align: center; */
+	margin: 35px auto 0;
+
 	padding: 0 1%;
-	width: 50px;
-	height: 36px;
+	width: 80px;
+	height: 40px;
 	background-color: #f0d8d9;
 	color: #d6564f;
 	font-size: 16px;
