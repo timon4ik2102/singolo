@@ -19,6 +19,7 @@ function onScrool(event) {
                 a.classList.remove('nav-text-active');
                 if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
                     a.classList.add('nav-text-active')
+
                     MOBILE_MENU.classList.remove('mobile-menu-active');
                     OVERLAY.classList.remove('overlay-active')
 
@@ -28,7 +29,6 @@ function onScrool(event) {
     })
 
 }
-
 
 
 
@@ -47,7 +47,6 @@ OVERLAY.addEventListener('click',(e) => {
 function showNavBar() {
     OVERLAY.classList.toggle('overlay-active')
     MOBILE_MENU.classList.toggle('mobile-menu-active');
-
 }
 
 
@@ -106,20 +105,22 @@ imagesItems.addEventListener('click',(event) => {
 
 //image random
 const portfolioButtons = document.querySelector('.portfolio-buttons')
-let arrImg = Array.from(imagesItems.querySelectorAll('.portfolio-img'))
-portfolioButtons.addEventListener('click',(event) => {
-    console.log(event)
+let portfolioListArray = Array.from(imagesItems.querySelectorAll('.portfolio-images-item'))
 
-    if (event.target.classList.contains('portfolio-btn')) {
-        portfolioButtons.querySelectorAll('.portfolio-btn').forEach((el,i) =>
-            el.classList.remove('portfolio-btn-active'))
-        event.target.classList.add('portfolio-btn-active')
 
-        let tempImgArrMix = arrImg.map(el => el.src).sort(() => 0.5 - Math.random())
-        arrImg.map((el,i) => el.src = tempImgArrMix[i])
-    }
-})
+//switch tags
+portfolioButtons.addEventListener('click',event => {
+    portfolioButtons.querySelectorAll('.portfolio-btn').forEach(el =>
+        el.classList.remove('portfolio-btn-active'))
+    event.target.classList.add('portfolio-btn-active')
+    let newImagesArray = randomArraySorted(portfolioListArray);
+    imagesItems.innerHTML = '';
+    newImagesArray.forEach(el => imagesItems.append(el));
 
+});
+
+//random sort images in Array
+const randomArraySorted = (element) => element.sort(() => 0.5 - Math.random());
 
 
 //black screen phone
